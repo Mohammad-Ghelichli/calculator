@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+#main{
+    width: 90%;
+    margin: 10px auto;
+    max-width: 800px;
+}
+p{
+    background-color: #444;
+    font-size: 48px;
+    padding: 10px;
+    text-align: right;
+    color: white;
+}
+
+span{
+  
+    width: 25%;
+    height: 60px;
+    float: left;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    font-size: 32px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    background-color: #ccc;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;}
+.number{
+    background-color:lightcoral;
+}
+</style>
+<body>
+    <div id="main" tabindex="0">
+         <p id="view">0</p>
+         <div id="button">
+            <span id="minus">-</span>
+            <span id="plus">+</span>
+            <span id="divide">/</span>
+            <span id="clear">C</span>
+            <span class="number" data-input="1">1</span>
+            <span class="number" data-input="2">2</span>
+            <span class="number" data-input="3">3</span>
+            <span id="multiply">*</span>
+            <span class="number" data-input="4">4</span>
+            <span class="number" data-input="5">5</span>
+            <span class="number" data-input="6">6</span>
+            <span id="sqr"><i>x<sup><small>2</small></sup> </i></span>
+            <span class="number" data-input="7">7</span>
+            <span class="number" data-input="8">8</span>
+            <span class="number" data-input="9">9</span>
+            <span id="root">√</span>
+            <span class="number" data-input="0">0</span>
+            <span id="dash" data-input=".">.</span>
+            <span id="delet"> ← </span>
+            <span id="equal">=</span>
+         </div>
+
+    
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
